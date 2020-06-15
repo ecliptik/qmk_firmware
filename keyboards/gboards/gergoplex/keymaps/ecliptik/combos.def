@@ -3,6 +3,7 @@
 
 // User includes
 #include "combos/ecliptik-vim-helpers.def"
+#include "combos/ecliptik-k8s-helpers.def"
 
 // Combos
 
