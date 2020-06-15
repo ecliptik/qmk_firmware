@@ -10,3 +10,6 @@
 
 // Word completion
 // #include "combos/eng-combos.def"
+
+// Combos
+SUBS(helloWorld, "QMK is pretty rad eh?", KC_H, KC_J)
