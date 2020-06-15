@@ -1,15 +1,17 @@
-// List any combo dictionaries you want loaded to 
+// List any combo dictionaries you want loaded to
 // your device below!
 
-// QMK wide includes
-#include "combos/germ-vim-helpers.def"
-#include "combos/germ-mouse-keys.def"
-
 // User includes
-#include "gergoplex.def"
-
-// Word completion
-// #include "combos/eng-combos.def"
+#include "combos/ecliptik-vim-helpers.def"
 
 // Combos
-SUBS(helloWorld, "QMK is pretty rad eh?", KC_H, KC_J)
+
+COMB(xcMinus,      KC_MINS,         KC_X, KC_C)
+COMB(opBslash,     KC_BSLS,         KC_O, KC_P)
+COMB(yuTick,       KC_GRV,          KC_Y, KC_U)
+COMB(uiPipe,       KC_PIPE,         KC_U, KC_I)
+COMB(hjLthan,      KC_LT,           KC_H, KC_J)
+COMB(klGthan,      KC_GT,           KC_K, KC_L)
+COMB(mcommUnders,  KC_UNDS,         KC_M, KC_COMM)
+COMB(nmSquote,     KC_QUOT,         KC_N, KC_M)
+COMB(ioDquote,     KC_DOUBLE_QUOTE, KC_I, KC_O)
