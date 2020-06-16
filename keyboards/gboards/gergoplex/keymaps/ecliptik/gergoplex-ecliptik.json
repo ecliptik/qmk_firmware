@@ -1,0 +1,462 @@
+[
+  {
+    "backcolor": "#ffffff",
+    "name": "GergoPlex-ecliptik",
+    "background": {
+      "name": "PBT Black",
+      "style": "background-image: url('/bg/plastic/pbt-black.png');"
+    },
+    "css": "* {\n font-size: 1.0em;\nfont-weight:400;\n }\n\n\n.keylabel1 { \n    transform: translateY(-11px) rotate(0deg); \n    z-index:1;\n}\n\n.keylabel8 { \n    transform: translateX(22px) translateY(5px) rotate(0deg); \n    z-index:1;\n}\n\n.keylabel5 { \n    transform: translateX(25px) translateY(-30px) rotate(90deg);\n    background: #0000ff30;\n    border-radius: 30px;\n    z-index:1;\n}\n\n.keylabel2 { \n    transform: translateX(25px) translateY(10px) rotate(0deg); \n    z-index:1;\n}\n\n.keyborder {\n    border-color: #CCCCCC;\n}\n\n#keyboard #keyboard-bg {\n    background-color: red;\n}",
+    "pcb": true
+  },
+  [
+    {
+      "x": 2,
+      "p": "CHICKLET"
+    },
+    "{\n3\n\n\n\n\n\n\n\nE",
+    {
+      "x": 6.75
+    },
+    "\"\n8\n\n\n\n\n\n\n\nI"
+  ],
+  [
+    {
+      "y": -0.87,
+      "x": 1
+    },
+    "@\n2\n\n\n\n\n\n\n\nW",
+    {
+      "x": 1
+    },
+    "}\n4\n\n\n\n\n\n\n\nR",
+    {
+      "x": 4.75
+    },
+    "~\n7\n\n\n\n\n\n\n\nU",
+    {
+      "x": 1
+    },
+    "\n9\n\n\n\n\n\n\n\nO"
+  ],
+  [
+    {
+      "y": -0.88,
+      "x": 4
+    },
+    "&\n5\n\n\n\n\n\n\n\nT",
+    {
+      "x": 2.75
+    },
+    "`\n6\n\n\n\n\n\n\n\nY"
+  ],
+  [
+    {
+      "y": -0.87
+    },
+    "!\n1\n\n\n\n\n\n\n\nQ",
+    {
+      "x": 10.75
+    },
+    "\\\n0\n\n\n\n\n\n\n\nP"
+  ],
+  [
+    {
+      "y": -0.38,
+      "x": 2,
+      "c": "#363434",
+      "t": "#ffffff"
+    },
+    "(\nF3\n\n\n\n\n\n\n\nD",
+    {
+      "x": 6.75
+    },
+    "/\n↑\n\n\n\n\n\n\n\nK"
+  ],
+  [
+    {
+      "y": -1,
+      "x": 5.5,
+      "c": "#cccccc",
+      "t": "#000000",
+      "p": "",
+      "w": 1.75,
+      "h": 1.75,
+      "h2": 1.5
+    },
+    "Symbol\nNumber\n\n\nHold\n\n\n\n\nMain"
+  ],
+  [
+    {
+      "y": -0.8700000000000001,
+      "x": 1,
+      "c": "#363434",
+      "t": "#ffffff",
+      "p": "CHICKLET"
+    },
+    "$\nF2\n\n\n\n\n\n\n\nS",
+    {
+      "x": 1
+    },
+    ")\nF4\n\n\n\n\n\n\n\nF",
+    {
+      "x": 4.75
+    },
+    "-\n↓\n\n\n\n\n\n\n\nJ",
+    {
+      "x": 1
+    },
+    "*\n→\n\n\n\n\n\n\n\nL"
+  ],
+  [
+    {
+      "y": -0.8799999999999999,
+      "x": 4,
+      "c": "#cccccc",
+      "t": "#000000"
+    },
+    "*\nF5\n\n\n\n\n\n\n\nG",
+    {
+      "x": 2.75
+    },
+    "+\n←\n\n\n\n\n\n\n\nH"
+  ],
+  [
+    {
+      "y": -0.8700000000000001,
+      "c": "#363434",
+      "t": "#ffffff",
+      "p": ""
+    },
+    "#\nF1\n\n\nControl\n\n\n\n\nA",
+    {
+      "x": 10.75
+    },
+    "'\nVolUp\n\n\nControl\n\n\n\n\n;"
+  ],
+  [
+    {
+      "y": -0.3799999999999999,
+      "x": 2,
+      "c": "#cccccc",
+      "t": "#000000",
+      "p": "CHICKLET"
+    },
+    "[\nF8\n\n\n\n\n\n\n\nC",
+    {
+      "x": 6.75
+    },
+    "<\nPgUp\n\n\n\n\n\n\n\n,"
+  ],
+  [
+    {
+      "y": -0.8700000000000001,
+      "x": 1
+    },
+    "^\nF7\n\n\n\n\n\n\n\nX",
+    {
+      "x": 1
+    },
+    "]\nF9\n\n\n\n\n\n\n\nV",
+    {
+      "x": 4.75
+    },
+    "=\nPgDn\n\n\n\n\n\n\n\nM",
+    {
+      "x": 1
+    },
+    ">\nMute\n\n\n\n\n\n\n\n."
+  ],
+  [
+    {
+      "y": -0.8799999999999999,
+      "x": 4
+    },
+    "|\nF10\n\n\n\n\n\n\n\nB",
+    {
+      "x": 2.75
+    },
+    "&\n\n\n\n\n\n\n\n\nN"
+  ],
+  [
+    {
+      "y": -0.8700000000000001,
+      "p": ""
+    },
+    "%\nF6\n\n\nShift\n\n\n\n\nZ",
+    {
+      "x": 10.75
+    },
+    "?\nVolDn\n\n\nShift\n\n\n\n\n/"
+  ],
+  [
+    {
+      "y": -0.1299999999999999,
+      "x": 2.25
+    },
+    ";\nF11\n\n\nMeta\n\n\n\n\nESC",
+    {
+      "x": 6.25,
+      "p": "CHICKLET"
+    },
+    "\nSkip\n\n\n\n\n\n\n\nTab"
+  ],
+  [
+    {
+      "y": 2.5,
+      "g": true,
+      "a": 7
+    },
+    "",
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "d": true
+    },
+    "ESC",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true
+    },
+    "",
+    "",
+    "",
+    {
+      "x": 2.75
+    },
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "f": 1,
+      "d": true
+    },
+    "`",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true,
+      "f": 3
+    },
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "d": true
+    },
+    "|",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true
+    },
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "d": true
+    },
+    "\"",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true
+    },
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "d": true
+    },
+    "\\",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true
+    },
+    ""
+  ],
+  [
+    "",
+    "",
+    {
+      "x": -0.75,
+      "t": "#ffffff",
+      "g": false,
+      "d": true
+    },
+    "Backspace",
+    {
+      "x": -0.25,
+      "t": "#000000",
+      "g": true,
+      "sm": "cherry"
+    },
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "sm": "",
+      "d": true
+    },
+    "Tab",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true
+    },
+    "",
+    "",
+    {
+      "x": 2.75
+    },
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "d": true
+    },
+    "<",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true
+    },
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "d": true
+    },
+    ":",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true
+    },
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "d": true
+    },
+    ">",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true
+    },
+    "",
+    ""
+  ],
+  [
+    "",
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "d": true
+    },
+    "Dash",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true
+    },
+    "",
+    "",
+    "",
+    {
+      "x": 2.75
+    },
+    "",
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "d": true
+    },
+    "'",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true
+    },
+    "",
+    {
+      "x": -0.5,
+      "t": "#ffffff",
+      "g": false,
+      "d": true
+    },
+    "_",
+    {
+      "x": -0.5,
+      "t": "#000000",
+      "g": true
+    },
+    "",
+    ""
+  ],
+  [
+    {
+      "r": 15,
+      "y": -7.37,
+      "x": 4.25,
+      "c": "#000000",
+      "t": "#ffffff",
+      "g": false,
+      "p": "",
+      "a": 4,
+      "w2": 1.5
+    },
+    "\nF12\n\n\nAlt\n\n\n\n\nENT"
+  ],
+  [
+    {
+      "r": 30,
+      "rx": 6.5,
+      "ry": 4.25,
+      "y": -0.25,
+      "x": -1.25,
+      "a": 7,
+      "h": 2
+    },
+    "SPC\n\n\n\nSYM"
+  ],
+  [
+    {
+      "r": -30,
+      "rx": 13,
+      "y": -3.75,
+      "x": -5.75,
+      "a": 4,
+      "h": 2
+    },
+    "=\n\n\n\nNUM\n\n\n\n\nSPC"
+  ],
+  [
+    {
+      "r": -15,
+      "rx": 0,
+      "ry": 0,
+      "y": 5.63,
+      "x": 6.5,
+      "w": 1.5
+    },
+    ";\nPlay\n\n\n\n\n\n\n\nShiift"
+  ]
+]
