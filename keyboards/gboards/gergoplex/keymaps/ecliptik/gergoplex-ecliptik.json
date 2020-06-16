@@ -2,10 +2,6 @@
   {
     "backcolor": "#ffffff",
     "name": "GergoPlex-ecliptik",
-    "background": {
-      "name": "PBT Black",
-      "style": "background-image: url('/bg/plastic/pbt-black.png');"
-    },
     "css": "* {\n font-size: 1.0em;\nfont-weight:400;\n }\n\n\n.keylabel1 { \n    transform: translateY(-11px) rotate(0deg); \n    z-index:1;\n}\n\n.keylabel8 { \n    transform: translateX(22px) translateY(5px) rotate(0deg); \n    z-index:1;\n}\n\n.keylabel5 { \n    transform: translateX(25px) translateY(-30px) rotate(90deg);\n    background: #0000ff30;\n    border-radius: 30px;\n    z-index:1;\n}\n\n.keylabel2 { \n    transform: translateX(25px) translateY(10px) rotate(0deg); \n    z-index:1;\n}\n\n.keyborder {\n    border-color: #CCCCCC;\n}\n\n#keyboard #keyboard-bg {\n    background-color: red;\n}",
     "pcb": true
   },
@@ -79,7 +75,6 @@
       "x": 5.5,
       "c": "#cccccc",
       "t": "#000000",
-      "p": "",
       "w": 1.75,
       "h": 1.75,
       "h2": 1.5
@@ -91,8 +86,7 @@
       "y": -0.8700000000000001,
       "x": 1,
       "c": "#363434",
-      "t": "#ffffff",
-      "p": "CHICKLET"
+      "t": "#ffffff"
     },
     "$\nF2\n\n\n\n\n\n\n\nS",
     {
@@ -125,8 +119,7 @@
     {
       "y": -0.8700000000000001,
       "c": "#363434",
-      "t": "#ffffff",
-      "p": ""
+      "t": "#ffffff"
     },
     "#\nF1\n\n\nControl\n\n\n\n\nA",
     {
@@ -139,8 +132,7 @@
       "y": -0.3799999999999999,
       "x": 2,
       "c": "#cccccc",
-      "t": "#000000",
-      "p": "CHICKLET"
+      "t": "#000000"
     },
     "[\nF8\n\n\n\n\n\n\n\nC",
     {
@@ -180,8 +172,7 @@
   ],
   [
     {
-      "y": -0.8700000000000001,
-      "p": ""
+      "y": -0.8700000000000001
     },
     "%\nF6\n\n\nShift\n\n\n\n\nZ",
     {
@@ -196,10 +187,9 @@
     },
     ";\nF11\n\n\nMeta\n\n\n\n\nESC",
     {
-      "x": 6.25,
-      "p": "CHICKLET"
+      "x": 6.25
     },
-    "\nSkip\n\n\n\n\n\n\n\nTab"
+    "Del\nSkip\n\n\n\n\n\n\n\nTab"
   ],
   [
     {
@@ -211,14 +201,12 @@
     "",
     {
       "x": -0.5,
-      "t": "#ffffff",
       "g": false,
       "d": true
     },
     "ESC",
     {
       "x": -0.5,
-      "t": "#000000",
       "g": true
     },
     "",
@@ -230,7 +218,6 @@
     "",
     {
       "x": -0.5,
-      "t": "#ffffff",
       "g": false,
       "f": 1,
       "d": true
@@ -238,34 +225,29 @@
     "`",
     {
       "x": -0.5,
-      "t": "#000000",
       "g": true,
       "f": 3
     },
     "",
     {
       "x": -0.5,
-      "t": "#ffffff",
       "g": false,
       "d": true
     },
     "|",
     {
       "x": -0.5,
-      "t": "#000000",
       "g": true
     },
     "",
     {
       "x": -0.5,
-      "t": "#ffffff",
       "g": false,
       "d": true
     },
     "\"",
     {
       "x": -0.5,
-      "t": "#000000",
       "g": true
     },
     "",
@@ -288,29 +270,24 @@
     "",
     {
       "x": -0.75,
-      "t": "#ffffff",
       "g": false,
       "d": true
     },
     "Backspace",
     {
       "x": -0.25,
-      "t": "#000000",
       "g": true,
       "sm": "cherry"
     },
     "",
     {
       "x": -0.5,
-      "t": "#ffffff",
       "g": false,
-      "sm": "",
       "d": true
     },
     "Tab",
     {
       "x": -0.5,
-      "t": "#000000",
       "g": true
     },
     "",
@@ -321,40 +298,34 @@
     "",
     {
       "x": -0.5,
-      "t": "#ffffff",
       "g": false,
       "d": true
     },
     "<",
     {
       "x": -0.5,
-      "t": "#000000",
       "g": true
     },
     "",
     {
       "x": -0.5,
-      "t": "#ffffff",
       "g": false,
       "d": true
     },
     ":",
     {
       "x": -0.5,
-      "t": "#000000",
       "g": true
     },
     "",
     {
       "x": -0.5,
-      "t": "#ffffff",
       "g": false,
       "d": true
     },
     ">",
     {
       "x": -0.5,
-      "t": "#000000",
       "g": true
     },
     "",
@@ -365,14 +336,12 @@
     "",
     {
       "x": -0.5,
-      "t": "#ffffff",
       "g": false,
       "d": true
     },
     "Dash",
     {
       "x": -0.5,
-      "t": "#000000",
       "g": true
     },
     "",
@@ -385,27 +354,23 @@
     "",
     {
       "x": -0.5,
-      "t": "#ffffff",
       "g": false,
       "d": true
     },
     "'",
     {
       "x": -0.5,
-      "t": "#000000",
       "g": true
     },
     "",
     {
       "x": -0.5,
-      "t": "#ffffff",
       "g": false,
       "d": true
     },
     "_",
     {
       "x": -0.5,
-      "t": "#000000",
       "g": true
     },
     "",
@@ -419,7 +384,6 @@
       "c": "#000000",
       "t": "#ffffff",
       "g": false,
-      "p": "",
       "a": 4,
       "w2": 1.5
     },
