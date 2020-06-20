@@ -2,7 +2,7 @@
 // your device below!
 
 // Word completion
-//#include "combos/eng-combos.def"
+// #include "combos/eng-combos.def"
 
 // User includes
 #include "combos/ecliptik-vim-helpers.def"
