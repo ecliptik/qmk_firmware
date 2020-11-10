@@ -16,13 +16,14 @@
 #include QMK_KEYBOARD_H
 #define BASE 0 // default layer
 #define SYMB 1 // symbols
-#define NUMB 2 // numbers/motion
+#define NUMB 2 // numbers
 
-enum custom_keycodes {             // Make sure have the awesome keycode ready
+enum custom_keycodes {
   SCR_SHOT,
   REC_VID,
 };
 
+// Macros
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {               // This will do most of the grunt work with the keycodes.
     case SCR_SHOT:
@@ -112,7 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //|---------'--,----'--,----'--,----'--,----'--,----'--,----'--,----'--,----'--,----'-----,-'-------------|
    KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, \
 //|---------,--'------,'-------',------'-------'-------',------'-------',------'--,----'--,----'--,-------|
-   KC_LCTL, KC_LALT , KC_LGUI  ,LT(SYMB,KC_ENT)    ,LT(NUMB, KC_SPC), TT(NUMB) ,KC_RALT,KC_RGUI,KC_RCTL  \
+   KC_LCTL, KC_LALT , KC_LGUI  ,LT(SYMB,KC_ENT)    ,LT(NUMB, KC_SPC), KC_RSFT, TT(NUMB), SCR_SHOT, REC_VID  \
 //`---------'---------'----------'-------------------'----------------'---------'-------'--------'--------'
 ),
 /*
@@ -125,7 +126,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 |---------,--'------,'-------',------'-------'-------'-------'-------'-------',------'--,----'--,-------|
 |       |      |      |                   |                |        |      |        |       |
 `---------'---------'---------'-----------------------------------------------'---------'-------'-------'*/
-  [SYMB] = LAYOUT_SPLIT_ANSI( /* SYMB */
+  [SYMB] = LAYOUT_SPLIT_ANSI( /* Symbol */
 //,-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.-------.
    KC_TRNS, KC_EXLM, KC_AT, KC_LCBR , KC_RCBR, KC_AMPR, KC_GRV, KC_TILD, KC_DOUBLE_QUOTE, KC_SLASH, KC_BSLS, KC_TRNS, \
 //|-------'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-----'-,-------------|
@@ -159,9 +160,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 )
 };
 
+// LEDs
 void update_led(void) {
   rgblight_sethsv_at(0,0,0, 0);
-  switch (biton32(layer_state)) { //same code as above
+  switch (biton32(layer_state)) {
     case BASE:
       rgblight_sethsv_at(HSV_TEAL, 1);
       rgblight_sethsv_at(HSV_MAGENTA, 2);
