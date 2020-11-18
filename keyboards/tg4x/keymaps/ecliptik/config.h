@@ -17,8 +17,9 @@
 #pragma once
 
 // place overrides here
-#define COMBO_COUNT 15
 #define TAPPING_TERM 150
+#define COMBO_COUNT 15
+#define COMBO_TERM 60
 #define TAPPING_TOGGLE 2
 #define RGBLIGHT_LAYERS
 #define RGBLIGHT_SLEEP
