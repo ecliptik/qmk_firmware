@@ -161,39 +161,41 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 // LEDs
-void update_led(void) {
-  rgblight_sethsv_at(0,0,0, 0);
-  switch (biton32(layer_state)) {
-    case BASE:
-      rgblight_sethsv_at(HSV_TEAL, 1);
-      rgblight_sethsv_at(HSV_MAGENTA, 2);
-      rgblight_sethsv_at(HSV_TEAL, 3);
-      rgblight_sethsv_at(HSV_MAGENTA, 4);
-      rgblight_sethsv_at(HSV_TEAL, 5);
-      rgblight_sethsv_at(HSV_MAGENTA, 6);
-      break;
-    case SYMB:
-      rgblight_sethsv_range(HSV_BLUE,1,7);
-      break;
-    case NUMB:
-      rgblight_sethsv_range(HSV_GREEN,1,7);
-      break;
-    default:
-      rgblight_sethsv_at(HSV_TEAL, 1);
-      rgblight_sethsv_at(HSV_MAGENTA, 2);
-      rgblight_sethsv_at(HSV_TEAL, 3);
-      rgblight_sethsv_at(HSV_MAGENTA, 4);
-      rgblight_sethsv_at(HSV_TEAL, 5);
-      rgblight_sethsv_at(HSV_MAGENTA, 6);
-      break;
-  }
+//
+
+const rgblight_segment_t PROGMEM my_layer1_layer[] = RGBLIGHT_LAYER_SEGMENTS(
+    {0, 2, HSV_TEAL},
+    {2, 1, HSV_MAGENTA},
+    {3, 1, HSV_TEAL},
+    {4, 1, HSV_MAGENTA},
+    {5, 1, HSV_TEAL},
+    {6, 1, HSV_MAGENTA}
+);
+
+const rgblight_segment_t PROGMEM my_layer2_layer[] = RGBLIGHT_LAYER_SEGMENTS(
+    {0, 7, HSV_BLUE}
+);
+
+const rgblight_segment_t PROGMEM my_layer3_layer[] = RGBLIGHT_LAYER_SEGMENTS(
+    {0, 7, HSV_GREEN}
+);
+
+// Now define the array of layers. Later layers take precedence
+const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
+    my_layer1_layer,
+    my_layer2_layer,
+    my_layer3_layer
+);
+
+void keyboard_post_init_user(void) {
+    // Enable the LED layers
+    rgblight_layers = my_rgb_layers;
+    rgblight_set_layer_state(0, layer_state_is(0));
 }
 
-void led_set_user(uint8_t usb_led) {
-  update_led();
-}
-
-uint32_t layer_state_set_user(uint32_t state) {
-  update_led();
-  return state;
+layer_state_t layer_state_set_user(layer_state_t state) {
+    // Both layers will light up if both kb layers are active
+    rgblight_set_layer_state(1, layer_state_cmp(state, 1));
+    rgblight_set_layer_state(2, layer_state_cmp(state, 2));
+    return state;
 }
