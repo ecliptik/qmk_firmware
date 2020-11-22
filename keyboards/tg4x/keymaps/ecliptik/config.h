@@ -18,8 +18,9 @@
 
 // place overrides here
 #define TAPPING_TERM 150
+#define PERMISSIVE_HOLD
 #define COMBO_COUNT 15
-#define COMBO_TERM 60
+#define COMBO_TERM 50
 #define TAPPING_TOGGLE 2
 #define RGBLIGHT_LAYERS
 #define RGBLIGHT_SLEEP
