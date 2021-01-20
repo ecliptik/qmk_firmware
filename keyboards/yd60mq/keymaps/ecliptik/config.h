@@ -3,8 +3,7 @@
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 2 of the License, or
- * (at your option) any later version.
- *
+ * (at your option) any later version.  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -17,10 +16,12 @@
 #pragma once
 
 // place overrides here
-#define TAPPING_TERM 150
+#define TAPPING_TERM 130
+#define IGNORE_MOD_TAP_INTERRUPT
+#define RETRO_TAPPING
 #define PERMISSIVE_HOLD
 #define COMBO_COUNT 15
-#define COMBO_TERM 50
+#define COMBO_TERM 20
 #define TAPPING_TOGGLE 2
 #define RGBLIGHT_LAYERS
 #define RGBLIGHT_SLEEP
