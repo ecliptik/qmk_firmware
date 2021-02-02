@@ -16,7 +16,7 @@
 #pragma once
 
 // place overrides here
-#define TAPPING_TERM 130
+#define TAPPING_TERM 150
 #define IGNORE_MOD_TAP_INTERRUPT
 #define RETRO_TAPPING
 #define PERMISSIVE_HOLD
